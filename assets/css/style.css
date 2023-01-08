@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+body {
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: #FFF;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.title h1 {
+    font-size: 60px;
+}
+
+.title h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.card-form {
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: 440px;
+    border-radius: 8px;
+}
+
+.form-body {
+    color: white;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.card-gasolina {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellowgreen;
+    width: 300px;
+    height: 150px;
+    border-radius: 8px;
+    transition: all ease 1s;
+}
+
+.card-etanol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    background-color: green;
+    border-radius: 8px;
+    transition: all ease 1s;
+}
+
+.result {
+    color: #FFF;
+    margin-bottom: 50px;
+}
+
+.form-body label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-body input[type="number"] {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+
+}
+
+
+.buttons {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#clear,
+#calc {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(48, 155, 172);
+    width: 300px;
+    height: 50px;
+    transition: all ease 0.4s;
+    border: none;
+    border-radius: 8px;
+}
+
+#clear:hover,
+#calc:hover {
+    cursor: pointer;
+    background-color: rgb(37, 117, 130);
+}
+
+.animation {
+    transform: scale(1.1);
+}
+
+
+#notice {
+    color: rgb(200, 255, 0);
+    font-size: 15px;
+    transition: all ease 1s;
+
+}
+
+
+
+
+.footer-line {
+    width: 100vw;
+    height: 1px;
+    background-color: #AAA;
+}
+
+.credits {
+    text-align: center;
+    color: #AAA;
+}
+
+.credits a {
+    color: #AAA;
+    font-weight: 700;
+}
+
+
+
+/* --------------------------------------Media Queries-------------------------------------------------- */
+
+@media (max-width: 500px) {
+
+    .title h1 {
+        font-size: 35px;
+    }
+
+    .card-form {
+        width: 350px;
+        height: 520px;
+    }
+
+    .form-body {
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .card-gasolina,
+    .card-etanol {
+        width: 80%;
+
+    }
+
+    .card-etanol {
+        margin-top: 35px;
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #clear,
+    #calc {
+        width: 150px;
+    }
+
+    .result {
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .result #calcResult {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+
+
+@media (min-width: 505px) and (max-width: 800px) {
+
+    .title h1 {
+        font-size: 35px;
+    }
+
+    .card-form {
+        width: 95vw;
+        height: 320px;
+    }
+
+    .form-body {
+        width: inherit;
+        justify-content: space-around;
+        margin-bottom: 0px;
+    }
+
+    .card-gasolina,
+    .card-etanol {
+        width: 220px;
+        height: 120px;
+    }
+
+    .buttons {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #clear,
+    #calc {
+        width: 150px;
+    }
+
+    .result {
+        width: 90%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .result #calcResult {
+        font-size: 15px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/images/icon.png">
+    <title>Viabilidade Etanol VS Gasolina</title>
+</head>
+
+<body>
+
+    <main>
+
+        <div class="title">
+            <h1>Qual compensa?</h1>
+            <!-- <h3>*Utilize ponto para separar as casas decimais</h3> -->
+        </div>
+
+        <div class="card-form">
+
+            <div class="form-body">
+                <div class="card-gasolina">
+                    <label>Preço Gasolina (R$) <br>
+                        <input type="number" placeholder="Digite o valor da Gasolina" id="gasolina">
+                    </label>
+                </div>
+
+                <div class="card-etanol">
+                    <label>Preço Etanol (R$)<br>
+                        <input type="number" placeholder="Digite o valor do Etanol" id="etanol">
+                    </label>
+                </div>
+            </div>
+            <div class="result">
+                <h2 id="calcResult"></h2>
+            </div>
+            <div class="buttons">
+                <button id="clear" onclick="clearValues()">Limpar</button>
+                <button id="calc" onclick="calc(valueGasolina, valueEtanol)">Calcular</button>
+            </div>
+        </div>
+
+        <h2 id="notice"></h2>
+    </main>
+
+    <!-- <footer>
+        <div class="credits">
+            <div class="footer-line"></div>
+            Coded by <a href="https://github.com/RodrigoVictor01" target="_blank">Rodrigo Victor</a>
+        </div>
+    </footer> -->
+
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
