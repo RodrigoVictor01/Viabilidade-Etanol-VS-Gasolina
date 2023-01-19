@@ -221,6 +221,11 @@ input[type=number]::-webkit-inner-spin-button {
         text-align: center;
     }
 
+      #notice {
+        font-size: 15px;
+        text-align: center;
+    }
+    
 }
 
 
@@ -264,6 +269,10 @@ input[type=number]::-webkit-inner-spin-button {
     }
 
     .result #calcResult {
+        font-size: 15px;
+        text-align: center;
+    }
+      #notice {
         font-size: 15px;
         text-align: center;
     }
