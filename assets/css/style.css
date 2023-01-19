@@ -179,6 +179,10 @@ input[type=number]::-webkit-inner-spin-button {
     .title h1 {
         font-size: 35px;
     }
+    
+     .title h3 {
+        font-size: 12px;
+    }
 
     .card-form {
         width: 350px;
@@ -233,6 +237,10 @@ input[type=number]::-webkit-inner-spin-button {
 
     .title h1 {
         font-size: 35px;
+    }
+    
+     .title h3 {
+        font-size: 12px;
     }
 
     .card-form {
